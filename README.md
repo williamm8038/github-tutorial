@@ -40,7 +40,7 @@ _by William Molina_
 12. In the terminal type "ssh -T git@github.com"
 13. Type "yes" to the prompt
 14. Type your github username
-15. Type your github password
+15. Type your github password   
 
 
 
@@ -74,4 +74,4 @@ _by William Molina_
 Status: Used to see of a file needs to be added or committed
 Add: Add a file to the stage
 Commit: Takes a screenshot of all files on the stage 
-Push: Push all committed files to the cloud (github)
+Push: Push all committed files to the cloud (github)  
