@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>GitHub Tutorial by williamm8038</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/williamm8038/github-tutorial">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>GitHub Tutorial</h1>
+            <h2>Git into it</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/williamm8038/github-tutorial/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/williamm8038/github-tutorial/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by William Molina</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p>### Git</p>
+
+<ul>
+<li>Git is where you alter your files</li>
+<li>Keeps track of different versions of your files</li>
+<li>Allows you to add and commit these files to github</li>
+<li>Doesn't require github</li>
+</ul>
+
+<h3>
+<a id="github" class="anchor" href="#github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github</h3>
+
+<ul>
+<li>Github hosts git</li>
+<li>Allows you to share your git files with others </li>
+<li>Allows you to edit others files and give suggestions</li>
+<li>Requires git to work</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h3>
+<a id="making-a-github-account" class="anchor" href="#making-a-github-account" aria-hidden="true"><span class="octicon octicon-link"></span></a>Making a github account</h3>
+
+<ol>
+<li>go to <a href="https://www.github.com">github</a> and click sign up</li>
+<li>Make an appropriate username and password</li>
+<li>Click "free account"</li>
+<li>Click "finish sign up"</li>
+</ol>
+
+<h3>
+<a id="linking-your-github-to-nitrous" class="anchor" href="#linking-your-github-to-nitrous" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linking your Github to Nitrous</h3>
+
+<ol>
+<li>sign into Github</li>
+<li>Click on the profile icon in the top right and click on settings</li>
+<li>Click ssh keys on the left sidebar</li>
+<li>Add ssh key</li>
+<li>Title it "nitrous.io"</li>
+<li>Go to nitrous</li>
+<li>Click your username in the top right corner and go to dashboard</li>
+<li>Go to the ssh keys tab</li>
+<li>Copy and paste ssh key into github</li>
+<li>Click add key</li>
+<li>Go back to nitrous, go to the container tab in the dashboard and OPEN IDE</li>
+<li>In the terminal type "ssh -T <a href="mailto:git@github.com">git@github.com</a>"</li>
+<li>Type "yes" to the prompt</li>
+<li>Type your github username</li>
+<li>Type your github password<br>
+</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<ol>
+<li>make a directory using <code>mkdir first-repo</code> and <code>cd</code> into it</li>
+<li>type <code>pwd</code> and you should be in <code>/home/nitrous/first-repo</code>
+</li>
+<li>initialize git in first-repo</li>
+<li>type (use first and last name) <code>git config --global user.name “First Last”</code>
+</li>
+<li>enter your email (use the same email as your github account <code>git config --global user.email “username@hstat.org”</code>
+</li>
+<li>make a readme file using <code>touch README.md</code>
+</li>
+<li>open your readme file and write soemthing in it</li>
+<li>save your text</li>
+<li>add your file</li>
+<li>commit it to github (use a commit message that'll tell you what you last did on it)</li>
+<li>go back to your github tab, click theplus sign in the top right and click "new repository"</li>
+<li>Name it "first repo" (the name of your repo and directory must <em>ALWAYS</em> be the same)</li>
+<li>create repository</li>
+<li>There should be two boxes at the top, pick <code>ssh</code>
+</li>
+<li>In the second gray text box,copy each line of text into the command line one at a time</li>
+<li>You can edit your README.md file</li>
+<li>add and commit your file</li>
+<li>type <code>git push</code> </li>
+<li>go to github and refresh your page</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p>Status: Used to see of a file needs to be added or committed
+Add: Add a file to the stage
+Commit: Takes a screenshot of all files on the stage 
+Push: Push all committed files to the cloud (github)  </p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/williamm8038">williamm8038</a> can be found on <a href="https://github.com/williamm8038/github-tutorial">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
